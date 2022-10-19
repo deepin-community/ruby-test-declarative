@@ -1,0 +1,58 @@
+ruby-test-declarative (0.0.6-2) unstable; urgency=medium
+
+  * Extend the long description (fixes lintian warning).
+
+ -- Lucas Nussbaum <lucas@debian.org>  Thu, 06 Jul 2017 20:59:11 +0200
+
+ruby-test-declarative (0.0.6-1) unstable; urgency=medium
+
+  [ Cédric Boutillier ]
+  * Bump debhelper compatibility level to 9
+  * Use https:// in Vcs-* fields
+  * Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.7 (no changes needed)
+
+  [ Lucas Nussbaum ]
+  * New upstream version 0.0.6.
+  * Drop 0001-Add-support-for-Minitest-5.patch (no longer needed)
+  * Bump Standards-Version. No changes needed.
+  * Update name of README.
+  * Drop useless comments in rules.
+
+ -- Lucas Nussbaum <lucas@debian.org>  Thu, 06 Jul 2017 20:41:58 +0200
+
+ruby-test-declarative (0.0.5-3) unstable; urgency=medium
+
+  * Add patch 0001-Add-support-for-Minitest-5.patch to support minitest >5.
+    Closes: #795042
+  * Refresh packaging using dh-make-ruby.
+    + Bump Standards-Version.
+
+ -- Lucas Nussbaum <lucas@debian.org>  Tue, 18 Aug 2015 11:01:35 +0200
+
+ruby-test-declarative (0.0.5-2) unstable; urgency=low
+
+  * Team upload.
+
+  [ Cédric Boutillier ]
+  * transform hyphen to underline to fix debian/watch
+  * debian/control
+    - remove obsolete DM-Upload-Allowed flag
+    - use canonical URI in Vcs-* fields
+  * debian/copyright
+    - use DEP5 copyright-format/1.0 official URL for Format field
+    - change to a working url in Format: field
+
+  [ Jonas Genannt ]
+  * d/control
+    - bumped standards version to 3.9.5 (no changed needed)
+    - changed dependency from ruby1.8 to ruby
+  * d/copyright: updated to license format 1.0
+
+ -- Jonas Genannt <jonas.genannt@capi2name.de>  Sun, 15 Dec 2013 21:10:17 +0100
+
+ruby-test-declarative (0.0.5-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Lucas Nussbaum <lucas@lucas-nussbaum.net>  Tue, 26 Apr 2011 22:06:44 +0200

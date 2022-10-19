@@ -1,0 +1,25 @@
+Source: ruby-test-declarative
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Lucas Nussbaum <lucas@debian.org>
+Build-Depends: debhelper (>= 9~),
+               gem2deb,
+               rake
+Standards-Version: 4.0.0
+Vcs-Git: https://anonscm.debian.org/git/pkg-ruby-extras/ruby-test-declarative.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-test-declarative.git
+Homepage: http://github.com/svenfuchs/test_declarative
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-test-declarative
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: adds a declarative test method syntax to test/unit
+ ruby-test-declarative adds a declarative test method syntax to test/unit:
+ instead of using the 'def test_foo' syntax, a 'test' method is provided
+ and takes a string, describing the test, as argument.
